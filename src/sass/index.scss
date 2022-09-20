@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* layout */
+@import './layout/navbar.scss';
+
+/* components */
+@import './components/card.scss';
+@import './components/view360Image.scss';
+@import './components/linkList.scss';
+@import './components/loginModal.scss';
+@import './components/authModal.scss';
+
+/* pages */
+@import './pages/models.scss';
+@import './pages/model-types.scss';
+@import './pages/model-type.scss';

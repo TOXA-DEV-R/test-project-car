@@ -1,0 +1,16 @@
+.link {
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    margin-right: 9px;
+
+    span,
+    a {
+      font-size: 12px;
+      font-weight: 400;
+      color: black;
+    }
+  }
+}

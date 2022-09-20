@@ -1,0 +1,40 @@
+.navbar {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 12px;
+
+  &-menu {
+    display: flex;
+
+    li {
+      margin-left: 20px;
+    }
+  }
+
+  &-admin__link {
+    height: 48px;
+    padding: 0 25px;
+    background-color: #2A85FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+
+  }
+
+  &-admin {}
+
+  &-admin__icon {
+    margin-right: 6px;
+    display: inline-flex;
+  }
+}
