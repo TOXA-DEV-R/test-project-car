@@ -2,11 +2,12 @@
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { fetchModelTypes } from "../features/car-slice-model";
 
 const ModelTypes = () => {
   const { id } = useParams();
+  const { state } = useLocation();
 
   const disptach = useDispatch();
   const { modelTypes = [] } = useSelector((state) => state.carSliceModel);
@@ -20,19 +21,19 @@ const ModelTypes = () => {
       <div className="container">
         <ul className="link-list">
           <li className="link-item">
-            <span>Bosh sahifa </span>
+            <Link to="/">Bosh sahifa </Link>
           </li>
           <li className="link-item">
             <span>/</span>
           </li>
           <li className="link-item">
-            <span>Modellari</span>
+            <Link to="/models">Modellari</Link>
           </li>
           <li className="link-item">
             <span>/</span>
           </li>
           <li className="link-item">
-            <span>Chevrolet turlari</span>
+            <span>{state?.name || ""} turlari</span>
           </li>
         </ul>
       </div>

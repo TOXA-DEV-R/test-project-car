@@ -11,6 +11,7 @@ import "./sass/index.scss";
 import AuthModal from "./components/auth/auth-modal";
 import { useEffect, useState } from "react";
 import { initialUserData } from "./features/user-data-slice";
+import Home from "./page/home";
 
 const App = () => {
   const {
@@ -32,7 +33,8 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Models />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/models" element={<Models />} />
         <Route path="/models/model-types/:id" element={<ModelTypes />} />
         <Route path="/models/model-type/:id" element={<ModelType />} />
       </Routes>

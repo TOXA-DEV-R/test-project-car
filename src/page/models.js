@@ -18,13 +18,13 @@ const Models = () => {
       <div className="container">
         <ul className="link-list">
           <li className="link-item">
-            <span>Bosh sahifa </span>
+            <Link to="/">Bosh sahifa </Link>
           </li>
           <li className="link-item">
             <span>/</span>
           </li>
           <li className="link-item">
-            <span>modellari</span>
+            <span>Modellari</span>
           </li>
         </ul>
       </div>
@@ -37,6 +37,7 @@ const Models = () => {
                 models.map((item) => (
                   <Link
                     to={`/models/model-types/${item._id}`}
+                    state={{ name: item.name }}
                     className="models-card"
                     key={item._id}
                   >
@@ -44,7 +45,7 @@ const Models = () => {
                       <img
                         src={`https://cartestwebapp.herokuapp.com/${item.imgUrl}`}
                         className="models-card__image"
-                        alt={item.name}
+                        alt={`${item.name} image`}
                       />
                     </div>
                     <div className="models-card__body">

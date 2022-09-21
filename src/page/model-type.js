@@ -103,20 +103,18 @@ const ModelType = () => {
                     <input
                       type="radio"
                       id="external"
-                      name="car__image"
                       value="outside"
                       checked={isOutSide === "outside" ? true : false}
-                      onClick={isCheckedInput}
+                      onChange={isCheckedInput}
                     />
                     <label htmlFor="external">Tashqi</label>
                     <input
                       type="radio"
                       id="interior"
-                      name="car__image"
                       value="inside"
                       checked={isOutSide === "inside" ? true : false}
                       className="modelType__car-input"
-                      onClick={isCheckedInput}
+                      onChange={isCheckedInput}
                     />
                     <label htmlFor="interior">Ichki makon</label>
                   </div>

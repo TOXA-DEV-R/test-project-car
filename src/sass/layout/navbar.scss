@@ -8,11 +8,22 @@
   margin-top: 30px;
   border-radius: 12px;
 
-  &-menu {
+  &__menu {
     display: flex;
 
-    li {
-      margin-left: 20px;
+  }
+
+  &__item {
+    a {
+      font-size: 1rem;
+      color: rgba(48, 48, 48, 0.979);
+      transition: all 300ms ease-out;
+    }
+
+    &:hover {
+      a {
+        color: black;
+      }
     }
   }
 

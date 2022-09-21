@@ -9,7 +9,7 @@ const api = axios.create({
 });
 
 export const getModels = async () => {
-  const { data } = await api.get(`/category/marka?limit=6&page=1`);
+  const { data } = await api.get(`/category/marka?limit=4&page=1`);
   return data;
 };
 
@@ -24,6 +24,5 @@ export const getModelType = async (categoryId) => {
   const { data } = await api.get(
     `/car?limit=1&page=1&categoryId=${categoryId}`
   );
-  console.log(data);
   return data;
 };

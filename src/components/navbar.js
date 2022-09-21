@@ -2,6 +2,7 @@
 
 import { IoPersonOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { loginModalOpen } from "../features/login-modal-slice";
 
 const Navbar = ({ children }) => {
@@ -11,7 +12,11 @@ const Navbar = ({ children }) => {
   return (
     <>
       <div className="navbar">
-        <div></div>
+        <ul className="navbar__menu">
+          {/* <li className="navbar__item">
+            <Link to="/models">modellari</Link>
+          </li> */}
+        </ul>
         <div className="navbar-admin">
           <button
             className="navbar-admin__link"
