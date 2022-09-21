@@ -12,6 +12,7 @@ const Models = () => {
   useEffect(() => {
     dispatch(fetchModels());
   }, []);
+
   return (
     <>
       <div className="container">

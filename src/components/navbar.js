@@ -1,6 +1,5 @@
 /** @format */
 
-import { useState } from "react";
 import { IoPersonOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { loginModalOpen } from "../features/login-modal-slice";

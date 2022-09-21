@@ -50,35 +50,45 @@ const LoginModal = () => {
   };
 
   return (
-    <div className="loginModal">
-      <form
-        className="loginModal__wrap"
-        onSubmit={handleSubmit(submitedHandle)}
+    <>
+      <span
+        className="loginModal__close"
+        onClick={() => {
+          dispatch(loginModalClose());
+        }}
       >
-        <h3 className="loginModal__title">Log in</h3>
-        <div className="loginModal__inputs">
-          <input
-            type="tel"
-            placeholder="Call Number"
-            required
-            className="loginModal__input"
-            value="+998993466789"
-            {...register("tel")}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            required
-            className="loginModal__input"
-            value="student"
-            {...register("pas")}
-          />
-        </div>
-        <button type="submit" className="loginModal__btn">
-          Submit
-        </button>
-      </form>
-    </div>
+        <img src="/assets/icon/icons8-close-60.png" alt="Close" />
+      </span>
+      <div className="loginModal">
+        <form
+          className="loginModal__wrap"
+          onSubmit={handleSubmit(submitedHandle)}
+        >
+          <h3 className="loginModal__title">Log in</h3>
+          <div className="loginModal__inputs">
+            <input
+              type="tel"
+              placeholder="Call Number"
+              required
+              className="loginModal__input"
+              value="+998993466789"
+              {...register("tel")}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              required
+              className="loginModal__input"
+              value="student"
+              {...register("pas")}
+            />
+          </div>
+          <button type="submit" className="loginModal__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

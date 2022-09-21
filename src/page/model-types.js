@@ -11,8 +11,6 @@ const ModelTypes = () => {
   const disptach = useDispatch();
   const { modelTypes = [] } = useSelector((state) => state.carSliceModel);
 
-  // console.log(modelTypes);
-
   useEffect(() => {
     disptach(fetchModelTypes(String(id)));
   }, []);

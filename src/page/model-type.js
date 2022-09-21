@@ -105,7 +105,7 @@ const ModelType = () => {
                       id="external"
                       name="car__image"
                       value="outside"
-                      checked
+                      checked={isOutSide === "outside" ? true : false}
                       onClick={isCheckedInput}
                     />
                     <label htmlFor="external">Tashqi</label>
@@ -114,6 +114,7 @@ const ModelType = () => {
                       id="interior"
                       name="car__image"
                       value="inside"
+                      checked={isOutSide === "inside" ? true : false}
                       className="modelType__car-input"
                       onClick={isCheckedInput}
                     />
